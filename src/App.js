@@ -1,11 +1,16 @@
+import { Fragment } from "react";
 import LayerHeader from "./components/Layers/LayerHeader";
+import Meals from "./components/Meals/Meals";
 
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <LayerHeader />
-    </div>
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
 }
 
