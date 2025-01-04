@@ -1,16 +1,16 @@
-.layer-header {
+.header {
     background-color: rgb(109, 25, 25);
     color: aliceblue;
 }
 
-.layer-header-content {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
 }
 
-.layer-header h1 {
+.header h1 {
     font-size: 2rem;
 }
 

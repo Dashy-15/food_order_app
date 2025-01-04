@@ -1,14 +1,14 @@
 import CartIcon from "../Cart/CartIcon";
-import "./CartButton.css"
+import classes from "./CartButton.module.css"
 
 const CartButton = () => {
     return (
-        <button className="cart-button">
-            <span className="cart-icon">
+        <button className={classes.button}>
+            <span className={classes.icon}>
                 <CartIcon />
             </span>
             <span>Your Cart</span>
-            <span className="cart-badge">0</span>
+            <span className={classes.badge}>0</span>
         </button>
     )
 }
