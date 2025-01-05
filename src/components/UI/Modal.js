@@ -3,7 +3,7 @@ import classes from "./Modal.module.css";
 import ReactDOM from "react-dom";
 
 const Backdrop = (props) => {
-    return <div className={classes.backdrop}></div>
+    return <div className={classes.backdrop} onClick={props.onHide}></div>
 }
 
 const Layout = (props) => {
@@ -17,7 +17,7 @@ const Layout = (props) => {
 const Modal = (props) => {
     return (
         <Fragment>
-            {ReactDOM.createPortal(<Backdrop />, document.getElementById("backdrop-root"))}
+            {ReactDOM.createPortal(<Backdrop onHide={props.onClose}/>, document.getElementById("backdrop-root"))}
             {ReactDOM.createPortal(<Layout>{props.children}</Layout>, document.getElementById("layout-root"))}
         </Fragment>
     )
