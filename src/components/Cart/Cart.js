@@ -1,6 +1,6 @@
 import classes from "./Cart.module.css";
 import Modal from "../UI/Modal";
-// import { useState } from "react";
+
 
 const Cart = (props) => {
     const cartItems = [{ id: "c1", name: "sushi", price: 22.39 }];

@@ -35,7 +35,7 @@ const DUMMY_MEALS = [
     }
 ];
 
-const AvailableMeals = () => {
+const AvailableMeals = (props) => {
     return (
         <section className={classes.meals}>
             <Card>
@@ -44,6 +44,7 @@ const AvailableMeals = () => {
                         return (
                             <MealItems 
                             key={meal.id}
+                            id={meal.id}
                             meal={meal}
                             />
                         )
